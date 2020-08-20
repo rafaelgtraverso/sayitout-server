@@ -5,6 +5,10 @@ const User = mongoose.model('User');
 
 const router = express.Router();
 
+router.post ('/',(req, res) =>{
+    res.send('My API');
+});
+
 router.post('/signup',async (req, res) => {
     const {email, password } = req.body;
  
